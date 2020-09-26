@@ -1,0 +1,240 @@
+// IMPORT GENERAL STYLES
+@import "./sass-components/_generalReset.scss";
+
+
+body {
+    background-image: url("../assets/pawel-czerwinski-arwTpnIUHdM-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: rubik, sans-serif;
+    font-size: 6rem;
+    color: white;
+    width: 40%;
+    text-align: center;
+    align-self: center;
+    margin-left: 9%;
+}
+
+section {
+    background-color: white;
+    height: 70vh;
+    width: 30%;
+    border-radius: 120px;
+    margin: 7% 10%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: center;
+    h2 {
+        text-align: center;
+        font-size: 4rem;
+        font-family: rubik, sans-serif;
+        margin-top: 10%;
+    }
+    img {
+        width: 40%;
+        height: 7vh;
+        align-self: center;
+        margin-top: 5%;
+    }
+    form{
+        width: 40%;
+        margin: 5%;
+        text-align: center;
+        align-self: center;
+        font-family: montserrat, sans-serif;
+        font-size: 1.2rem;
+        .user{
+            display: block;
+            background-color: #fafbfd;
+            margin: 20% 0;
+            height: 5vh;
+            padding: 1px 0;
+        }
+        .pass {
+            display: block;
+            background-color: #fafbfd;
+            margin: 10% 0;
+            height: 5vh;
+        }
+    }
+    button {
+        border: 0px;
+        border-radius: 40px;
+        background-color: #3AB954;
+        width: 25%;
+        height: 4vh;
+        color: white;
+        font-family: rubik, sans-serif;
+        font-size: 1.3rem;
+        align-self: center;
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        color: #f55252;
+        font-size: 1.2rem;
+        font-family: montserrat, sans-serif;
+        text-align: center;
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    section {
+        height: 65vh;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    section {
+        width: 50%;
+        height: 62vh;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    section {
+        width: 60%;
+    }
+    h1 {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 1125px) {
+    section {
+        width: 60%;
+        margin-right: 5%;
+    }
+    h1 {
+        width: 40%;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    section {
+        width: 70%;
+        margin-right: 5%;
+    }
+    h1 {
+        width: 35%;
+        margin-left: 5%;
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    section {
+        width: 70%;
+        margin-right: 5%;
+    }
+    h1 {
+        width: 35%;
+        margin-left: 5%;
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    section {
+        height: 55vh;
+        h2 {
+            font-size: 3rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 775px) {
+    body {
+        flex-direction: column;
+    }
+    h1 {
+        width: 100%;
+        margin: 5% auto;
+        font-size: 5rem;
+    }
+    section {
+        height: 60vh;
+        width: 60%;
+        margin: 7% auto;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    section {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    h1 {
+        width: 90%;
+    }
+    section {
+        width: 80%;
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 5rem;
+    }
+    section {
+        width: 80%;
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    h1 {
+        font-size: 3rem;
+    }
+    section {
+        height: 70vh;
+        button {
+            width: 40%;
+            height: 6vh;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 400px) {
+    section {
+        height: 65vh;
+        width: 80%;
+        img {
+            width: 50%;
+        }
+        a {
+            margin-top: 7%;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    h1 {
+        font-size: 3rem;
+    }
+    section {
+        height: 70vh;
+        h2 {
+            font-size: 2.3rem;
+        }
+        button {
+            width: 40%;
+            height: 6vh;
+        }
+        a {
+            margin-top: 9%;
+        }
+    }
+}

@@ -1,0 +1,319 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+header div.title-logo {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+header div.title-logo img {
+  display: inline-block;
+  width: 6rem;
+  height: auto;
+  padding: 0;
+  border-radius: 50%;
+}
+header div.title-logo h1 {
+  display: inline-block;
+  color: white;
+  height: 4rem;
+  text-align: center;
+  font-size: 4rem;
+}
+header nav {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header nav a {
+  display: inline-block;
+  padding: 3px 0;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  margin: 2rem;
+}
+header nav a:hover {
+  transition: 0.3s;
+  color: #0fbc4c;
+  font-weight: 900;
+}
+header nav a.current {
+  border-bottom: 2px solid #3ab954;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1120px) {
+  header {
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  header div.title-logo h1 {
+    font-size: 3rem;
+    height: 3rem;
+  }
+  header div.title-logo img {
+    width: 4rem;
+    height: auto;
+  }
+  header nav a {
+    padding: 2px;
+    margin: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  header div.title-logo {
+    display: none;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+}
+
+.hero {
+  width: 100%;
+  background-image: url("../assets/joel-filipe-Wc8k-KryEPM-unsplash.jpg");
+  margin-top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  max-height: 1750px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hero div {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 60%;
+}
+.hero div h2 {
+  display: block;
+  font-size: 18rem;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 0;
+}
+.about p {
+  font-size: 4rem;
+  width: 50%;
+}
+.about p span {
+  color: #0fbc4c;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.team-gallery {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.team-gallery .team-member {
+  border-radius: 10px;
+  background-color: #FFFF;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  width: 30%;
+  min-width: 345px;
+  margin: 5% 0.1rem;
+}
+.team-gallery .team-member img {
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+.team-gallery .team-member .member-info {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  width: 90%;
+  margin: 0 auto;
+}
+.team-gallery .team-member .member-info h3 {
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  padding: 3%;
+}
+.team-gallery .team-member .member-info div.role {
+  background-color: lightgray;
+  border-radius: 10px;
+  width: 50%;
+  margin: 0 auto;
+  padding: 2% 0;
+}
+.team-gallery .team-member .member-info div.role img.icon {
+  display: block;
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+}
+.team-gallery .team-member .member-info div.role h5 {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2%;
+}
+.team-gallery .team-member .member-info div.paragraph {
+  flex: 1;
+  padding: 1% 0;
+}
+.team-gallery .team-member .member-info div.paragraph p {
+  padding: 2% 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  margin-top: 4%;
+}
+footer img {
+  display: block;
+  height: 5rem;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1050px) {
+  .about p {
+    width: 60%;
+    font-size: 3rem;
+  }
+
+  div.paragraph p {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  section.hero div h2 {
+    font-size: 15rem;
+  }
+
+  .team-gallery {
+    width: 95%;
+  }
+  .team-gallery .team-member {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .team-gallery {
+    flex-flow: column nowrap;
+    width: 95%;
+    align-items: center;
+  }
+  .team-gallery .team-member {
+    width: 80%;
+    margin: 7% auto;
+  }
+}
+@media only screen and (max-width: 554px) {
+  section.hero div h2 {
+    font-size: 12rem;
+  }
+
+  section.about p {
+    width: 70%;
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  header div.title-logo {
+    display: none;
+  }
+}

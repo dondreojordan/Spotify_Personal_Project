@@ -1,0 +1,372 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header div.title-logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div.title-logo img {
+  display: inline-block;
+  width: 6rem;
+  height: auto;
+  padding: 0;
+  border-radius: 50%;
+}
+
+header div.title-logo h1 {
+  display: inline-block;
+  color: white;
+  height: 4rem;
+  text-align: center;
+  font-size: 4rem;
+}
+
+header nav {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav a {
+  display: inline-block;
+  padding: 3px 0;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  margin: 2rem;
+}
+
+header nav a:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #0fbc4c;
+  font-weight: 900;
+}
+
+header nav a.current {
+  border-bottom: 2px solid #3ab954;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1120px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  header div.title-logo h1 {
+    font-size: 3rem;
+    height: 3rem;
+  }
+  header div.title-logo img {
+    width: 4rem;
+    height: auto;
+  }
+  header nav a {
+    padding: 2px;
+    margin: 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    width: 100%;
+    max-width: 500px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header div.title-logo {
+    display: none;
+  }
+  header nav {
+    width: 95%;
+    max-width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: auto;
+  }
+  header nav a {
+    font-size: 2rem;
+    margin: 2px auto;
+    padding: 2px auto;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Rubik', sans-serif;
+}
+
+section.hero-title-card {
+  width: 100%;
+  background: url("../assets/pawel-czerwinski-Tyg0rVhOTrE-unsplash.jpg");
+  margin-top: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  max-height: 1024px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.hero-title-card .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 60%;
+}
+
+section.hero-title-card .title-container h2 {
+  display: block;
+  font-size: 18rem;
+  color: white;
+}
+
+section.about {
+  width: 100%;
+  height: 60vh;
+  min-height: 600px;
+  max-height: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.about div.overview {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.about div.overview p {
+  display: block;
+  line-height: 1.2;
+  text-align: center;
+  width: 60%;
+  max-height: 250px;
+  min-width: 550px;
+  padding: 2%;
+  margin: 1px;
+  font-size: 4rem;
+}
+
+section.about div.overview p span {
+  color: #0fbc4c;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+}
+
+footer img {
+  display: block;
+  height: 5rem;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1150px) {
+  section.about div.overview p {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  section.hero-title-card div.title-container h2 {
+    font-size: 15rem;
+  }
+  section.about div.overview p {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  section.hero-title-card div.title-container h2 {
+    font-size: 12rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section.about div.overview p {
+    min-width: 300px;
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  section.hero-title-card {
+    overflow: hidden;
+  }
+  section.hero-title-card div.title-container h2 {
+    font-size: 8rem;
+  }
+  section.about {
+    font-size: 2rem;
+    overflow: auto;
+  }
+}
+/*# sourceMappingURL=chaz-productInfo.css.map */

@@ -1,0 +1,175 @@
+// IMPORT GENERAL STYLES
+@import "./sass-components/generalReset.scss";
+
+@import "./sass-components/navbar";
+
+* {
+  box-sizing: border-box;
+  // border: 1px solid gray;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+  // font-family: 'Rubik', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Rubik', sans-serif;
+}
+
+section.hero-title-card {
+  width: 100%;
+  background: url("../assets/pawel-czerwinski-Tyg0rVhOTrE-unsplash.jpg");
+  margin-top: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  max-height: 1024px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+
+
+  .title-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 60%;
+
+    h2 {
+      display: block;
+      font-size: 18rem;
+      color: white;
+    }
+
+  }
+}
+
+section.about {
+  width: 100%;
+  height: 60vh;
+  min-height: 600px;
+  max-height: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  div.overview {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      display: block;
+      line-height: 1.2;
+      text-align: center;
+      width: 60%;
+      max-height: 250px;
+      min-width: 550px;
+      padding: 2%;
+      margin: 1px;
+      font-size: 4rem;
+
+      span {
+        color: $lightgreen2;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  // margin-top: 4%;
+
+  img {
+    display: block;
+    height: 5rem;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  section.about {
+    div.overview {
+      p {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  section.hero-title-card {
+    div.title-container {
+      h2 {
+        font-size: 15rem;
+      }
+    }
+  }
+
+  section.about {
+    div.overview {
+      p {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  section.hero-title-card {
+    div.title-container {
+      h2 {
+        font-size: 12rem;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  section.about {
+    div.overview {
+      p {
+        min-width: 300px;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  section.hero-title-card {
+    overflow: hidden;
+    div.title-container {
+      h2 {
+        font-size: 8rem;
+      }
+    }
+  }
+  // header {
+  //   div.title-logo {
+  //     display: none;
+  //   }
+  // }
+  section.about {
+    font-size: 2rem;
+    overflow: auto;
+  }
+}

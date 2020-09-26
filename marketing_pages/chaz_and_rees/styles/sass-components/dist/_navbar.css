@@ -1,0 +1,95 @@
+header {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+header div.title-logo {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+header div.title-logo img {
+  display: inline-block;
+  width: 6rem;
+  height: auto;
+  padding: 0;
+  border-radius: 50%;
+}
+header div.title-logo h1 {
+  display: inline-block;
+  color: white;
+  height: 4rem;
+  text-align: center;
+  font-size: 4rem;
+}
+header nav {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header nav a {
+  display: inline-block;
+  padding: 3px 0;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  margin: 2rem;
+}
+header nav a:hover {
+  transition: 0.3s;
+  color: #0fbc4c;
+  font-weight: 900;
+}
+header nav a.current {
+  border-bottom: 2px solid #3ab954;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1120px) {
+  header {
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  header div.title-logo h1 {
+    font-size: 3rem;
+    height: 3rem;
+  }
+  header div.title-logo img {
+    width: 4rem;
+    height: auto;
+  }
+  header nav a {
+    padding: 2px;
+    margin: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  header {
+    width: 100%;
+    max-width: 500px;
+    justify-content: center;
+  }
+  header div.title-logo {
+    display: none;
+  }
+  header nav {
+    width: 95%;
+    max-width: 500px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: auto;
+  }
+  header nav a {
+    font-size: 2rem;
+    margin: 2px auto;
+    padding: 2px auto;
+  }
+}
