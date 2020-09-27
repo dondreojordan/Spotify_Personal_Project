@@ -17,6 +17,7 @@ pandas = "*"
 uvicorn = "*"
 plotly = "*"
 numpy = "*"
+beautifulsoup4 = "*"
 
 [requires]
 python_version = "3.7"
