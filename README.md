@@ -1,4 +1,4 @@
-# DS Build Week scaffold
+# My personal soon-to-be functional spotify recommendation full-stack web application with ML techniques
 
 - [Big picture](#big-picture)
 - [Tech stack](#tech-stack)
